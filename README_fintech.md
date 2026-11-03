@@ -484,13 +484,13 @@ GROUP BY transaction_type;
 - **Dataset Summary**: After cleaning, the data holds **2,975 transactions** from **1,109 customers** between January 1 and December 30, 2024, with a total volume of **$1,485,137.82** and an average transaction of **$499.21**. About 9.3% of transactions (277) were large outliers above $1,251.27.
 - **Overall Fraud**: There were **70 fraud cases**, a fraud rate of about **2.35%** of transactions.
 - **Fraud by Channel**: Mobile App accounts for the largest share of fraud cases (**34.29%**), followed by Web (**25.71%**), POS (**24.29%**), and ATM (**15.71%**). Because channels have different transaction counts, share of fraud is not the same as fraud rate. Dividing each channel's fraud cases by its transaction count gives a rate of about **2.84% for Web**, **2.50% for POS**, **2.37% for Mobile App**, and **1.70% for ATM**, so Web is the riskiest channel per transaction.
-- **Fraud by Merchant Category**: **Bank Transfer** (30%) and **Utilities** (18.57%) account for nearly half of all fraud cases, followed by Cash and Travel (8.57% each). Fraud rate by category: **[add after running rate query]**.
-- **International vs. Domestic**: **87.14%** of fraud cases were domestic and **12.86%** were international. Because most transactions are domestic, the fraud rate for each group is needed for a fair comparison: international **[X]%** vs. domestic **[X]%**.
-- **Time of Day**: Evening had the most fraud cases (**27**), followed by Morning (**26**) and Overnight (**17**). Fraud rate per time frame: **[add after running rate query]**.
+- **Fraud by Merchant Category**: **Bank Transfer** (30%) and **Utilities** (18.57%) account for nearly half of all fraud cases, followed by Cash and Travel (8.57% each).
+- **International vs. Domestic**: **87.14%** of fraud cases were domestic and **12.86%** were international. 
+- **Time of Day**: Evening had the most fraud cases (**27**), followed by Morning (**26**) and Overnight (**17**).
 - **Fee Revenue**: The bank earned about **$13,856.55** in fees. Basic accounts generated the most (**$7,292.51, 52.6%**), followed by Business (**$3,893.46, 28.1%**) and Premium (**$2,670.58, 19.3%**).
 - **Spending by Age**: The **35-49** group has the highest average transaction (**$513.42**), while the **65+** group has the lowest (**$351.83**).
 - **Top Customers**: The top 10 customers moved about **$117,054**, roughly **7.9%** of total volume. Customer **6091** is the largest at **$24,363.96**.
-- **Declines**: There were **112 declined transactions** (about 3.8% of all transactions). The West has the largest share of declines (**25.89%**), followed by the Midwest (**22.32%**). Decline rate per region: **[add after running rate query]**.
+- **Declines**: There were **112 declined transactions** (about 3.8% of all transactions). The West has the largest share of declines (**25.89%**), followed by the Midwest (**22.32%**). 
 - **Transaction Size**: Business accounts have the highest average transaction (**$1,062.05**) compared with Premium (**$538.89**) and Basic (**$336.34**). Transfers are the largest transaction type on average (**$1,206.83**), far above Bill Payments (**$221.60**).
 
 ## Reports
@@ -503,7 +503,7 @@ GROUP BY transaction_type;
 
 1. Add extra verification for **Web** and **bank transfer** transactions, since Web has the highest fraud rate and Bank Transfer has the largest share of fraud cases.
 2. Monitor the largest-volume customers (such as customer 6091) and high-value transfers for unusual activity, since large amounts are more common in Business accounts and may mask fraud.
-3. Investigate why the **West** and **Midwest** have the most declined transactions: **[add after reviewing decline rates]**.
+3. Investigate why the **West** and **Midwest** have the most declined transactions.
 4. Review the fee structure for Premium accounts, which generate the least fee revenue despite higher average transaction sizes than Basic accounts.
 
 ## Assumptions & Limitations
@@ -532,9 +532,9 @@ This project walks through the SQL workflow of a fintech data analyst: database 
 - SQL (SQLite)
 - GitHub
 
-## Author - [Your Name]
+## Author - Diane Gordon
 
 This project is part of my data analytics portfolio, showcasing SQL skills for fintech and financial services analyst roles. Feel free to reach out with questions or feedback.
 
-- **LinkedIn**: [Add your link]
-- **GitHub**: [Add your link]
+- **LinkedIn**: (https://www.linkedin.com/in/diagordon/)
+- **GitHub**: (https://github.com/secretlyblu?tab=repositories)
